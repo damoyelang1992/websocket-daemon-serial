@@ -11,13 +11,13 @@ import thread
 import threading
 
 #needed for py2exe
-# import zope.interface
+#import zope.interface
 from twisted.internet import reactor
 from twisted.internet import error
 from twisted.python import log
 
-#needed for py2exe
-# import autobahn.resource
+#needed for py2exe py2app
+import autobahn.twisted.resource
 from autobahn.twisted.websocket import  WebSocketServerFactory, WebSocketServerProtocol, listenWS
 # from autobahn import httpstatus
 
@@ -28,17 +28,17 @@ import time
 import subprocess
 
 
-# import base64
+import base64
 import tempfile
 
 import platform
 
-# try:
-#   import servicemanager
-#   import _winreg as winreg
-#   import itertools
-# except ImportError:
-#   pass
+try:
+  import servicemanager
+  import _winreg as winreg
+  import itertools
+except ImportError:
+  pass
 
 list = []
 serial_port = None
