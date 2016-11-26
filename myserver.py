@@ -390,7 +390,12 @@ class ReaderThread(threading.Thread, ):
         """loop and copy serial->console"""
         try:
             while self.run:
-                data = self.serial_port.read().decode("ascii")
+		try:
+                    #I Got this Error,when Serialport BaudRate Error
+                    data = self.serial_port.read().decode("ascii")
+                except UnicodeDecodeError:
+                    print("SerialBaud Error!")
+                    data = "SerialBaud Error!\r\n"
                 if(data != ""):
                     # sys.stdout.write(data)
                     # sys.stdout.flush()
