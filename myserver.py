@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+#!/usr/bin/python
 import sys
 import logging
 
@@ -9,7 +11,7 @@ import thread
 import threading
 
 #needed for py2exe
-import zope.interface
+# import zope.interface
 from twisted.internet import reactor
 from twisted.internet import error
 from twisted.python import log
