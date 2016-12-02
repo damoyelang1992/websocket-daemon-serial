@@ -23,7 +23,7 @@ my_data_files = [('avrdudes/Windows', ['avrdudes/Windows/avrdude.conf']),
 
 myservice = Target(
     description = 'codebender',
-    modules = ['mywinserver'],
+    modules = ['winservice'],
     cmdline_style='pywin32'
 )
 

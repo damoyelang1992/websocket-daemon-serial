@@ -1,7 +1,7 @@
 import sys,logging,os,serial
 from serial.tools import list_ports
 
-import thread,threading
+import thread,threading,txaio
 
 #needed for py2exe
 import zope.interface
@@ -28,10 +28,7 @@ serial_port = None
 serial_device = None
 serial_baudrate = None
 
-
 logging.basicConfig(filename='app.log', level=logging.INFO)
-logging.info("Starting")
-
 
 def check_drivers_osx(websocket):
     if(os.path.exists("/var/db/receipts/com.FTDI.ftdiusbserialdriverinstaller.FTDIUSBSerialDriver-2.pkg.bom") and os.path.exists("/var/db/receipts/com.FTDI.ftdiusbserialdriverinstaller.FTDIUSBSerialDriver-2.pkg.plist") and os.path.exists("/var/db/receipts/com.FTDI.ftdiusbserialdriverinstaller.postflight.pkg.bom") and os.path.exists("/var/db/receipts/com.FTDI.ftdiusbserialdriverinstaller.postflight.pkg.plist") and os.path.exists("/var/db/receipts/com.FTDI.ftdiusbserialdriverinstaller.preflight.pkg.bom")):
@@ -273,21 +270,21 @@ class EchoServerProtocol(WebSocketServerProtocol):
                 self.sendMessage(json.dumps({"type":"error", "message":"You cannot set port while a serial connection is still open"}))
             
 
-    def onConnect(self, request):
-        print "peer " + str(request.peer)
-        print "peer_host " + request.peer.host
-        print "peerstr " + request.peerstr
-        print "headers " + str(request.headers)
-        print "host " + request.host
-        print "path " + request.path
-        print "params " + str(request.params)
-        print "version " + str(request.version)
-        print "origin " + request.origin
-        print "protocols " + str(request.protocols)
-
-        #TODO: For development purposes only. Fix this so it doesn't work for null (localhost) as well.
-        if(request.peer.host != "127.0.0.1" or (request.origin != "null" and request.origin != "http://codebender.cc")):
-            raise HttpException(httpstatus.HTTP_STATUS_CODE_UNAUTHORIZED[0], "You are not authorized for this!")
+    # def onConnect(self, request):
+        # print "peer " + str(request.peer)
+        # print "peer_host " + request.peer.host
+        # print "peerstr " + request.peerstr
+        # print "headers " + str(request.headers)
+        # print "host " + request.host
+        # print "path " + request.path
+        # print "params " + str(request.params)
+        # print "version " + str(request.version)
+        # print "origin " + request.origin
+        # print "protocols " + str(request.protocols)
+        #
+        # #TODO: For development purposes only. Fix this so it doesn't work for null (localhost) as well.
+        # if(request.peer.host != "127.0.0.1" or (request.origin != "null" and request.origin != "http://codebender.cc")):
+        #     raise HttpException(httpstatus.HTTP_STATUS_CODE_UNAUTHORIZED[0], "You are not authorized for this!")
 
     def onOpen(self):
         self.factory.register(self)
@@ -339,12 +336,12 @@ class BroadcastServerFactory(WebSocketServerFactory):
 
     def register(self, client):
         if not client in self.clients:
-            print "registered client " + client.peerstr
+            # print "registered client " + client.peerstr
             self.clients.append(client)
 
     def unregister(self, client):
         if client in self.clients:
-            print "unregistered client " + client.peerstr
+            # print "unregistered client " + client.peerstr
             self.clients.remove(client)
 
     def broadcast(self, msg):
@@ -382,7 +379,12 @@ class ReaderThread(threading.Thread, ):
         """loop and copy serial->console"""
         try:
             while self.run:
-                data = self.serial_port.read().decode("ascii")
+		try:
+                    #I Got this Error,when Serialport BaudRate Error
+                    data = self.serial_port.read().decode("ascii")
+                except UnicodeDecodeError:
+                    print("SerialBaud Error!")
+                    data = "SerialBaud Error!\r\n"
                 if(data != ""):
                     # sys.stdout.write(data)
                     # sys.stdout.flush()
@@ -390,57 +392,32 @@ class ReaderThread(threading.Thread, ):
         except serial.SerialException, e:
             raise
 
+
 def writer(serial_port, data):
     serial_port.write(data)
 
 
 class WebSerialProtocol(WebSocketServerProtocol):
     def __init__(self):
+        self.is_closed = txaio.create_future()
         self.connection_invalid = False
 
     def onMessage(self, msg, binary):
-        # logging.info("Received message: %s", msg)
-        # print "Received message: ", msg
-
         global serial_port
         global serial_device
         global serial_baudrate
 
         if serial_port != None:
             writer(serial_port, msg)
+            print("SerialData:"+msg)
         else:
             print "Could not send data. No active serial connections"
 
     def onConnect(self, request):
-        print "peer " + str(request.peer)
-        print "peer_host " + request.peer.host
-        print "peerstr " + request.peerstr
-        print "headers " + str(request.headers)
-        print "host " + request.host
-        print "path " + request.path
-        print "params " + str(request.params)
-        print "version " + str(request.version)
-        print "origin " + request.origin
-        print "protocols " + str(request.protocols)
-
-        #TODO: For development purposes only. Fix this so it doesn't work for null (localhost) as well.
-        if(request.peer.host != "127.0.0.1" or (request.origin != "null" and request.origin != "http://codebender.cc")):
-            self.connection_invalid = True
-            raise HttpException(httpstatus.HTTP_STATUS_CODE_UNAUTHORIZED[0], "You are not authorized for this!")
-
-        global serial_port
-        global serial_device
-        global serial_baudrate
-
-        if(serial_port != None):
-            self.connection_invalid = True
-            raise HttpException(httpstatus.HTTP_STATUS_CODE_UNAUTHORIZED[0], "You cannot open 2 serial ports!")
-
-        if(serial_device == None or serial_baudrate == None):
-            self.connection_invalid = True
-            raise HttpException(httpstatus.HTTP_STATUS_CODE_UNAUTHORIZED[0], "You must set serial device first!")
+		print("Client connecting: {0}".format(request.peer))
 
     def onOpen(self):
+		# print("WebSocket connection open.")
         global serial_port
         global serial_device
         global serial_baudrate
@@ -468,18 +445,15 @@ class WebSerialProtocol(WebSocketServerProtocol):
                 oldserial.close()
         WebSocketServerProtocol.connectionLost(self, reason)
 
-################ END OF WEBSERIAL CODE
-
-
 log.startLogging(sys.stdout)
 
 def main():
     try:
+        logging.info("Starting Websocket!")
         #initializing serial flashing etc utilities socket
         ServerFactory = BroadcastServerFactory
 
         factory = ServerFactory("ws://localhost:9000")
-        # factory = WebSocketServerFactory("ws://localhost:9000", debug = False)
         factory.protocol = EchoServerProtocol
         listenWS(factory)
 
@@ -492,87 +466,5 @@ def main():
         print "Port is already used. Exiting..."
         os._exit(0)
 
-
-'''
- Original windows service code:
- 
- Author: Alex Baker
- Date: 7th July 2008
- Description : Simple python program to generate wrap as a service based on example on the web, see link below.
- 
- http://essiene.blogspot.com/2005/04/python-windows-services.html
-
- Usage : python aservice.py install
- Usage : python aservice.py start
- Usage : python aservice.py stop
- Usage : python aservice.py remove
- 
- C:\>python aservice.py  --username <username> --password <PASSWORD> --startup auto install
-
-'''
-
-
-import win32service
-import win32serviceutil
-import win32api
-import win32con
-import win32event
-import win32evtlogutil
-import os
-
-#import win32traceutil
-
-
-def checkForStop(self):
-        
-      self.timeout = 60000
-
-      while 1:
-         # Wait for service stop signal, if I timeout, loop again
-         rc = win32event.WaitForSingleObject(self.hWaitStop, self.timeout)
-         # Check to see if self.hWaitStop happened
-         if rc == win32event.WAIT_OBJECT_0:
-            # Stop signal encountered
-            servicemanager.LogInfoMsg("codebender - STOPPED")
-            #TODO: Improve this. Windows consider it an error right now
-            os._exit(0)
-         else:
-            servicemanager.LogInfoMsg("codebender - is alive and well")   
-
-
-class aservice(win32serviceutil.ServiceFramework):
-   
-   _svc_name_ = "codebender python websocket daemon"
-   _svc_display_name_ = "allows the browser to communicate with the usb devices"
-   _svc_description_ = "works with awesome"
-         
-   def __init__(self, args):
-           win32serviceutil.ServiceFramework.__init__(self, args)
-           self.hWaitStop = win32event.CreateEvent(None, 0, 0, None)           
-
-   def SvcStop(self):
-           self.ReportServiceStatus(win32service.SERVICE_STOP_PENDING)
-           win32event.SetEvent(self.hWaitStop)                    
-         
-   def SvcDoRun(self):
-      #import win32traceutil
-      #logging.basicConfig(filename='app.log', level=logging.INFO)
-      logging.info("running daemon")
-      servicemanager.LogMsg(servicemanager.EVENTLOG_INFORMATION_TYPE,servicemanager.PYS_SERVICE_STARTED,(self._svc_name_, ''))
-
-      servicemanager.LogInfoMsg(os.getcwd())
-
-      #TODO: Move this to threading model and start/stop the thread only when we have registered clients
-      # Create a thread as follows
-      try:
-         thread.start_new_thread(checkForStop, (self, ))
-      except:
-         print "Error: unable to start thread"
-      main()
-      
-def ctrlHandler(ctrlType):
-   return True
-                  
-if __name__ == '__main__':   
-   win32api.SetConsoleCtrlHandler(ctrlHandler, True)   
-   win32serviceutil.HandleCommandLine(aservice)
+if __name__ == "__main__":
+    main()
