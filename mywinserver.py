@@ -1,12 +1,7 @@
-import sys
-import logging
-
-import os
-import serial
+import sys,logging,os,serial
 from serial.tools import list_ports
 
-import thread
-import threading
+import thread,threading
 
 #needed for py2exe
 import zope.interface
@@ -15,21 +10,11 @@ from twisted.internet import error
 from twisted.python import log
 
 #needed for py2exe
-import autobahn.resource
-from autobahn.websocket import HttpException, WebSocketServerFactory, WebSocketServerProtocol, listenWS
-from autobahn import httpstatus
+import autobahn.twisted.resource
+from autobahn.twisted.websocket import WebSocketServerFactory, WebSocketServerProtocol, listenWS
+# from autobahn import httpstatus
 
-import json
-
-import time
-
-import subprocess
-
-
-import base64
-import tempfile
-
-import platform
+import json,time,subprocess,base64,tempfile,platform
 
 try:
     import servicemanager
@@ -62,30 +47,6 @@ def check_drivers_windows(websocket):
     else:
         websocket.sendMessage(json.dumps({"type":"check_drivers","installed":False}))
 
-##def check_drivers_windows(websocket):
-##    try:
-##        key = winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, "SYSTEM\\DriverDatabase\\DriverPackages")
-##    except WindowsError, e:
-##  websocket.sendMessage(json.dumps({"type":"check_drivers","installed":False}))
-##  return
-##
-##    for i in itertools.count():
-##        try:
-##            val = winreg.EnumKey(key, i)
-##            if "arduino.inf" in val:
-##                val = winreg.OpenKey(key, val)
-##                found = 0
-##                for j in itertools.count():
-##                    val2 = winreg.EnumValue(val, j)
-##                    if((val2[0] == "InfName" and val2[1] == "arduino.inf") or ( val2[0] == "SignerName" and val2[1] == "Arduino LLC")):
-##                        found = found + 1
-##                    if found == 2:
-##                        websocket.sendMessage(json.dumps({"type":"check_drivers","installed":True}))
-##                        return
-##        except EnvironmentError:
-##            break
-##    websocket.sendMessage(json.dumps({"type":"check_drivers","installed":False}))
-##    return
 
 def check_permissions_linux(websocket):
     output = os.popen("groups | grep $(ls -l /dev/* | grep /dev/ttyS0 | cut -d ' ' -f 5)").read()
