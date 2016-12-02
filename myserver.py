@@ -100,7 +100,7 @@ def install_drivers_osx():
 def install_drivers_windows():
     print "installing drivers"
     # driver_path = os.environ['PROGRAMFILES'] + "\codebender/drivers/Windows/"
-    driver_path = os.getcwd() + "/drivers/Windows/"
+    driver_path = os.getcwd() + "/drivers/Windows/FTDI/"
     if platform.machine() == "x86":
             driver_cmd = "dpinst-x86.exe /sw"
     else:

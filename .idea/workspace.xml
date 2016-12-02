@@ -1,11 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7674d25-5663-427d-be74-9adef5121a78" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/python-websocket-daemon-master.iml" afterPath="$PROJECT_DIR$/.idea/python-websocket-daemon-master.iml" />
+    <list default="true" id="d7674d25-5663-427d-be74-9adef5121a78" name="Default" comment="fix windows platform old python module requirement">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/bundle-2.7/python27.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-Debug-L1-1-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-DelayLoad-L1-1-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-ErrorHandling-L1-1-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-Handle-L1-1-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-IO-L1-1-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-Interlocked-L1-1-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-LibraryLoader-L1-1-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-LocalRegistry-L1-1-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-Localization-L1-1-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-Memory-L1-1-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-Misc-L1-1-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-ProcessEnvironment-L1-1-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-ProcessThreads-L1-1-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-Profile-L1-1-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-String-L1-1-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-Synch-L1-1-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-SysInfo-L1-1-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/MPR.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/MSWSOCK.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/_ctypes.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/_hashlib.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/_socket.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/_ssl.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/_win32sysloader.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/bz2.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/pyexpat.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/pywintypes27.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/select.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/servicemanager.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/twisted/internet/iocpreactor/iocpsupport.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/unicodedata.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/win32api.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/win32event.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/win32file.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/win32gui.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/win32pipe.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/win32process.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/win32security.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/win32wnet.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/zope/interface/_zope_interface_coptimizations.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/LogoVerificationReport.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/Static/amd64/ftd2xx.lib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/Static/i386/ftd2xx.lib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/amd64/ftbusui.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/amd64/ftcserco.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/amd64/ftd2xx.lib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/amd64/ftd2xx64.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/amd64/ftdibus.sys" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/amd64/ftlang.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/amd64/ftser2k.sys" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/amd64/ftserui2.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/ftd2xx.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/ftdibus.cat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/ftdibus.inf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/ftdiport.cat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/ftdiport.inf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/i386/ftbusui.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/i386/ftcserco.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/i386/ftd2xx.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/i386/ftd2xx.lib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/i386/ftdibus.sys" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/i386/ftlang.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/i386/ftser2k.sys" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/i386/ftserui2.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/Old_Arduino_Drivers.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/arduino.cat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/arduino.inf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/dpinst-amd64.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/dpinst-x86.exe" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/setup-old.py" afterPath="$PROJECT_DIR$/setup-console.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mywinserver.py" afterPath="$PROJECT_DIR$/mywinserver.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myserver.py" afterPath="$PROJECT_DIR$/myserver.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,29 +91,37 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mywinserver.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mywinserver.py">
+      <file leaf-file-name="myserver.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myserver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="513" column="23" lean-forward="true" selection-start-line="513" selection-start-column="23" selection-end-line="513" selection-end-column="23" />
+            <state relative-caret-position="294">
+              <caret line="110" column="38" lean-forward="false" selection-start-line="110" selection-start-column="38" selection-end-line="110" selection-end-column="38" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#42#52#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/setup.py">
+      <file leaf-file-name="setup-console.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/setup-console.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="285">
+              <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>PROGRAMFILES</find>
+      <find>drivers/Windows</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,12 +130,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/mywinserver.py" />
+        <option value="$PROJECT_DIR$/myserver.py" />
+        <option value="$PROJECT_DIR$/setup-old.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="212" />
+    <option name="y" value="16" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -291,15 +372,30 @@
       <option name="presentableId" value="Default" />
       <updated>1480123841762</updated>
     </task>
+    <task id="LOCAL-00001" summary="fix windows platform old python module requirement">
+      <created>1480678312421</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1480678312421</updated>
+    </task>
+    <task id="LOCAL-00002" summary="添加 vcredist_x86.exe打包的时候用&#10;打包完成之后黑窗口提示出错，是zope冲突问题">
+      <created>1480679692348</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1480679692348</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="212" y="16" width="1382" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18594436" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18594436" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -318,6 +414,13 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
+    <MESSAGE value="fix windows platform old python module requirement" />
+    <MESSAGE value="添加 vcredist_x86.exe打包的时候用&#10;打包完成之后黑窗口提示出错，是zope冲突问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加 vcredist_x86.exe打包的时候用&#10;打包完成之后黑窗口提示出错，是zope冲突问题" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -358,14 +461,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myserver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/autobahn/twisted/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -382,21 +477,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/qinfei/websocket-daemon-serial-master/myserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mywinserver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="513" column="23" lean-forward="true" selection-start-line="513" selection-start-column="23" selection-end-line="513" selection-end-column="23" />
+        <state relative-caret-position="296">
+          <caret line="181" column="35" lean-forward="false" selection-start-line="181" selection-start-column="35" selection-end-line="181" selection-end-column="35" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
+    <entry file="file://$PROJECT_DIR$/myserver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="294">
+          <caret line="110" column="38" lean-forward="false" selection-start-line="110" selection-start-column="38" selection-end-line="110" selection-end-column="38" />
+          <folding>
+            <element signature="e#42#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup-console.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
