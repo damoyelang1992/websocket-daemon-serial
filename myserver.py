@@ -21,17 +21,7 @@ import autobahn.twisted.resource
 from autobahn.twisted.websocket import  WebSocketServerFactory, WebSocketServerProtocol, listenWS
 # from autobahn import httpstatus
 
-import json
-
-import time
-
-import subprocess
-
-
-import base64
-import tempfile
-
-import platform
+import json,time,subprocess,base64,tempfile,platform
 
 try:
   import servicemanager
@@ -100,7 +90,8 @@ def install_drivers_osx():
 def install_drivers_windows():
     print "installing drivers"
     # driver_path = os.environ['PROGRAMFILES'] + "\codebender/drivers/Windows/"
-    driver_path = os.getcwd() + "/drivers/Windows/FTDI/"
+    # driver_path = os.getcwd() + "/drivers/Windows/FTDI/"
+    driver_path = "C:\Users\yaolong\Desktop\websocket-daemon-serial\dist/drivers/Windows/FTDI"
     if platform.machine() == "x86":
             driver_cmd = "dpinst-x86.exe /sw"
     else:
@@ -197,7 +188,10 @@ def flash_arduino(cpu, ptc, prt, bad, binary):
 
     if platform.system() == "Windows":
         # bash_shell_path = os.environ['PROGRAMFILES'] + "\codebender/avrdudes/" + platform.system()
-        bash_shell_path = os.getcwd() + "/avrdudes/" + platform.system()
+        # bash_shell_path = os.getcwd() + "/avrdudes/" + platform.system()
+        bash_shell_path = "C:\Users\yaolong\Desktop\websocket-daemon-serial\dist/avrdudes/Windows"
+        logging.info("flash_arduino avrdude directory:")
+        logging.info(bash_shell_path)
         bash_shell_cmd =  "avrdude"
     else:
         frozen = getattr(sys, 'frozen', '')

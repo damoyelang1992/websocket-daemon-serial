@@ -7,9 +7,9 @@ class Target:
         self.__dict__.update(kw)
         # for the versioninfo resources
         self.version = "0.1.0"
-        self.company_name = "codebender"
-        self.copyright = "no copyright"
-        self.name = "codebender"
+        self.company_name = "LexinSmart"
+        self.copyright = "LexinSmart 2016"
+        self.name = "lexinSerialBridge"
 
 
 my_data_files = [('avrdudes/Windows', ['avrdudes/Windows/avrdude.conf']),
@@ -22,7 +22,7 @@ my_data_files = [('avrdudes/Windows', ['avrdudes/Windows/avrdude.conf']),
                 ('vcredist_x86.exe')]
 
 myservice = Target(
-    description = 'codebender',
+    description = 'lexinSerialBridge',
     modules = ['winservice'],
     cmdline_style='pywin32'
 )

@@ -1,82 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7674d25-5663-427d-be74-9adef5121a78" name="Default" comment="fix windows platform old python module requirement">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/bundle-2.7/python27.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-Debug-L1-1-0.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-DelayLoad-L1-1-0.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-ErrorHandling-L1-1-0.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-Handle-L1-1-0.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-IO-L1-1-0.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-Interlocked-L1-1-0.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-LibraryLoader-L1-1-0.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-LocalRegistry-L1-1-0.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-Localization-L1-1-0.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-Memory-L1-1-0.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-Misc-L1-1-0.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-ProcessEnvironment-L1-1-0.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-ProcessThreads-L1-1-0.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-Profile-L1-1-0.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-String-L1-1-0.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-Synch-L1-1-0.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/API-MS-Win-Core-SysInfo-L1-1-0.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/MPR.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/MSWSOCK.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/_ctypes.pyd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/_hashlib.pyd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/_socket.pyd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/_ssl.pyd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/_win32sysloader.pyd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/bz2.pyd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/pyexpat.pyd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/pywintypes27.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/select.pyd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/servicemanager.pyd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/twisted/internet/iocpreactor/iocpsupport.pyd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/unicodedata.pyd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/win32api.pyd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/win32event.pyd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/win32file.pyd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/win32gui.pyd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/win32pipe.pyd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/win32process.pyd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/win32security.pyd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/win32wnet.pyd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/bdist.win32/winexe/collect-2.7/zope/interface/_zope_interface_coptimizations.pyd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/LogoVerificationReport.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/Static/amd64/ftd2xx.lib" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/Static/i386/ftd2xx.lib" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/amd64/ftbusui.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/amd64/ftcserco.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/amd64/ftd2xx.lib" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/amd64/ftd2xx64.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/amd64/ftdibus.sys" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/amd64/ftlang.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/amd64/ftser2k.sys" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/amd64/ftserui2.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/ftd2xx.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/ftdibus.cat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/ftdibus.inf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/ftdiport.cat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/ftdiport.inf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/i386/ftbusui.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/i386/ftcserco.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/i386/ftd2xx.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/i386/ftd2xx.lib" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/i386/ftdibus.sys" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/i386/ftlang.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/i386/ftser2k.sys" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/FTDI USB Drivers/i386/ftserui2.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/Old_Arduino_Drivers.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/README.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/arduino.cat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/arduino.inf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/dpinst-amd64.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drivers/Windows/dpinst-x86.exe" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/setup-old.py" afterPath="$PROJECT_DIR$/setup-console.py" />
+    <list default="true" id="d7674d25-5663-427d-be74-9adef5121a78" name="Default" comment="windows service runs ok!">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mywinserver.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myserver.py" afterPath="$PROJECT_DIR$/myserver.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -90,37 +19,25 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="myserver.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myserver.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="110" column="38" lean-forward="false" selection-start-line="110" selection-start-column="38" selection-end-line="110" selection-end-column="38" />
-              <folding>
-                <element signature="e#42#52#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setup-console.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/setup-console.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>PROGRAMFILES</find>
       <find>drivers/Windows</find>
+      <find>peerstr</find>
+      <find>host</find>
+      <find>creat_future</find>
+      <find>codeben</find>
+      <find>logging</find>
+      <find>os.getcwd</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -129,15 +46,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/setup-old.py" />
+        <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/winservice.py" />
         <option value="$PROJECT_DIR$/mywinserver.py" />
         <option value="$PROJECT_DIR$/myserver.py" />
-        <option value="$PROJECT_DIR$/setup-old.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="212" />
-    <option name="y" value="16" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -160,7 +79,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -175,13 +93,14 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.mywinserver">
+  <component name="RunManager" selected="Python.myserver">
     <configuration default="false" name="myserver" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -356,8 +275,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.mywinserver" />
-        <item index="1" class="java.lang.String" itemvalue="Python.myserver" />
+        <item index="0" class="java.lang.String" itemvalue="Python.myserver" />
+        <item index="1" class="java.lang.String" itemvalue="Python.mywinserver" />
       </list>
     </recent_temporary>
   </component>
@@ -386,19 +305,50 @@
       <option name="project" value="LOCAL" />
       <updated>1480679692348</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="setup-old.py 并不是旧版本，而是生成了控制台程序不是服务程序。可用">
+      <created>1480680326229</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1480680326229</updated>
+    </task>
+    <task id="LOCAL-00004" summary="myserver适用于windows控制台和mac&amp;linux平台。mywinserver专门用来产生windows平台服务而写的">
+      <created>1480680574408</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1480680574408</updated>
+    </task>
+    <task id="LOCAL-00005" summary="windows service runs ok!">
+      <created>1480690310977</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1480690310977</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="212" y="16" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18594436" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18898809" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24549918" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33060557" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -408,7 +358,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -419,19 +368,36 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
     <MESSAGE value="fix windows platform old python module requirement" />
     <MESSAGE value="添加 vcredist_x86.exe打包的时候用&#10;打包完成之后黑窗口提示出错，是zope冲突问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加 vcredist_x86.exe打包的时候用&#10;打包完成之后黑窗口提示出错，是zope冲突问题" />
+    <MESSAGE value="setup-old.py 并不是旧版本，而是生成了控制台程序不是服务程序。可用" />
+    <MESSAGE value="myserver适用于windows控制台和mac&amp;linux平台。mywinserver专门用来产生windows平台服务而写的" />
+    <MESSAGE value="windows service runs ok!" />
+    <option name="LAST_COMMIT_MESSAGE" value="windows service runs ok!" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/myserver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1862">
+          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding>
+            <element signature="e#42#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1862">
+          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding>
+            <element signature="e#42#52#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -439,9 +405,59 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1862">
+          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#42#52#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mywinserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#42#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mywinserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -457,7 +473,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#42#52#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -465,7 +483,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -477,48 +494,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/qinfei/websocket-daemon-serial-master/myserver.py">
+    <entry file="file://E:/qinfei/websocket-daemon-serial-master/myserver.py" />
+    <entry file="file://$PROJECT_DIR$/setup-py2app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mywinserver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="181" column="35" lean-forward="false" selection-start-line="181" selection-start-column="35" selection-end-line="181" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myserver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="110" column="38" lean-forward="false" selection-start-line="110" selection-start-column="38" selection-end-line="110" selection-end-column="38" />
-          <folding>
-            <element signature="e#42#52#0" expanded="true" />
-          </folding>
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/setup-console.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        <state relative-caret-position="114">
+          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mywinserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="481" column="0" lean-forward="false" selection-start-line="481" selection-start-column="0" selection-end-line="481" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/winservice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1083">
+          <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#493#1" expanded="false" />
+            <element signature="e#495#514#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-380">
+          <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+          <folding>
+            <element signature="e#42#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
