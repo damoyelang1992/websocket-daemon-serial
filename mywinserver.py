@@ -83,7 +83,8 @@ def install_drivers_osx():
 def install_drivers_windows():
     print "installing drivers"
     servicemanager.LogInfoMsg("installing drivers")
-    driver_path = os.environ['PROGRAMFILES'] + "\codebender/drivers/Windows/"
+    # driver_path = os.environ['PROGRAMFILES'] + "\codebender/drivers/Windows/"
+    driver_path = os.getcwd()+ "/drivers/Windows/"
 
     if platform.machine() == "x86":
             driver_cmd = "dpinst-x86.exe /sw"
@@ -176,7 +177,8 @@ def flash_arduino(cpu, ptc, prt, bad, binary):
     print "flashing arduino"
     servicemanager.LogInfoMsg("flashing arduino")
     if platform.system() == "Windows":
-        bash_shell_path = os.environ['PROGRAMFILES'] + "\codebender/avrdudes/" + platform.system()
+        # bash_shell_path = os.environ['PROGRAMFILES'] + "\codebender/avrdudes/" + platform.system()
+        bash_shell_path = os.getcwd() + "/avrdudes/" + platform.system()
         bash_shell_cmd =  "avrdude"
     else:
         frozen = getattr(sys, 'frozen', '')
