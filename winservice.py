@@ -23,8 +23,6 @@ import win32con
 import win32event
 import win32evtlogutil
 import os,servicemanager,logging,thread,myserver
-
-
 # import win32traceutil
 
 
@@ -37,17 +35,17 @@ def checkForStop(self):
         # Check to see if self.hWaitStop happened
         if rc == win32event.WAIT_OBJECT_0:
             # Stop signal encountered
-            servicemanager.LogInfoMsg("codebender - STOPPED")
+            servicemanager.LogInfoMsg("LexinSmartDeamon - STOPPED")
             # TODO: Improve this. Windows consider it an error right now
             os._exit(0)
         else:
-            servicemanager.LogInfoMsg("codebender - is alive and well")
+            servicemanager.LogInfoMsg("LexinSmartDeamon - is alive and well")
 
 
 class aservice(win32serviceutil.ServiceFramework):
-    _svc_name_ = "codebender python websocket daemon"
-    _svc_display_name_ = "allows the browser to communicate with the usb devices"
-    _svc_description_ = "works with awesome"
+    _svc_name_ = "LexinSmartDaemon"
+    _svc_display_name_ = "LexinSmartSerialBridge"
+    _svc_description_ = "allows the browser to communicate with the usb devices"
 
     def __init__(self, args):
         win32serviceutil.ServiceFramework.__init__(self, args)

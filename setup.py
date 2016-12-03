@@ -12,14 +12,14 @@ class Target:
         self.name = "lexinSerialBridge"
 
 
-my_data_files = [('avrdudes/Windows', ['avrdudes/Windows/avrdude.conf']),
-                ('avrdudes/Windows', ['avrdudes/Windows/avrdude.exe']),
-                ('avrdudes/Windows', ['avrdudes/Windows/libusb0.dll']),
-                ('drivers/Windows/FTDI', ['drivers/Windows/FTDI/arduino.cat']),
-                ('drivers/Windows/FTDI', ['drivers/Windows/FTDI/arduino.inf']),
-                ('drivers/Windows/FTDI', ['drivers/Windows/FTDI/dpinst-x86.exe']),
-                ('drivers/Windows/FTDI', ['drivers/Windows/FTDI/dpinst-amd64.exe']),
-                ('vcredist_x86.exe')]
+my_data_files = [('avrdudes', ['avrdudes/Windows/avrdude.conf']),
+                ('avrdudes', ['avrdudes/Windows/avrdude.exe']),
+                ('avrdudes', ['avrdudes/Windows/libusb0.dll']),
+                ('drivers/FTDI', ['drivers/Windows/FTDI/arduino.cat']),
+                ('drivers/FTDI', ['drivers/Windows/FTDI/arduino.inf']),
+                ('drivers/FTDI', ['drivers/Windows/FTDI/dpinst-x86.exe']),
+                ('drivers/FTDI', ['drivers/Windows/FTDI/dpinst-amd64.exe']),
+                ('',['vcredist_x86.exe'])]
 
 myservice = Target(
     description = 'lexinSerialBridge',
