@@ -6,7 +6,7 @@ setup(
     options=dict(py2app=dict(
         resources = ['avrdudes/Darwin/avrdude.conf', 'avrdudes/Darwin/avrdude', 'drivers/Darwin/FTDIUSBSerialDriver_10_4_10_5_10_6_10_7.mpkg'],
         plist = dict(LSBackgroundOnly=True),
-        iconfile = "codebender.icns",
+        iconfile = "lexin.icns",
     )),
     app=["myserver.py"],
     name="LexinSerialBradge",
